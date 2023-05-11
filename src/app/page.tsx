@@ -9,8 +9,8 @@ export default async function Home() {
 
   return (
     <main className="">
-      <LoginButton />
-      <LogoutButton />
+      {session ? <LogoutButton /> : <LoginButton />}
+
 
       <h1> Control diabetes gesticional </h1>
       <h2>Server session</h2>

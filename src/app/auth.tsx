@@ -7,5 +7,5 @@ export const LoginButton = () => {
 };
 
 export const LogoutButton = () => {
-  return <button onClick={() => signOut()}>Sign out</button>;
+  return <button onClick={() => signOut()}>Salir</button>;
 };
