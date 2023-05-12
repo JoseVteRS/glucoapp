@@ -1,7 +1,7 @@
 export interface Control {
     id: string;
     date: string;
-    details: any[];
+    details: string;
     value: string;
     moment: "FASTING"
     | "ONE_HOUR_AFTER_BREAKFAST"
@@ -14,7 +14,7 @@ export interface Control {
 export interface IData {
     id: string;
     date: string;
-    details: any[];
+    details: string;
     value: string;
     moment: string;
 }

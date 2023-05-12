@@ -47,14 +47,15 @@ export const authOptions: NextAuthOptions = {
         })
     ],
     callbacks: {
-        session: ({ session, token }) => {
-            return session;
+        session: async ({ session, user, token }) => {
+            session.user.id = token.sub;
+            return Promise.resolve(session);
         },
-        jwt: ({ token, user }) => {
+        jwt: ({ token }) => {
             return token;
         },
 
-    }
+    },
 }
 
 const handler = NextAuth(authOptions)

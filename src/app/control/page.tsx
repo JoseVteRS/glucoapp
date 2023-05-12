@@ -1,9 +1,18 @@
-'use client'
-import { Control } from "@/interfaces/control.interface";
-import { formatDate, groupDataByDate, isGlucoseIdeal, toControl } from "@/utils";
-import { Fragment } from "react";
-import data from "../../../data/data.json";
+// import { getControls } from "@/services/Control/getControls";
 
+async function getControls() {
+
+  try {
+    const response = await fetch('http://localhost:3000/api/control/all', { method: 'GET' });
+    const data = await response.json();
+    if (!response.ok) throw new Error('Error al obtener los controles');
+    return data
+
+  } catch (error) {
+    console.log(error);
+  }
+
+}
 
 interface MomentTranslation {
   [moment: string]: string;
@@ -18,18 +27,19 @@ const momentTranslation: MomentTranslation = {
   ONE_HOUR_AFTER_DINNER: "1h post cena",
 };
 
+export default async function ControlPage() {
+
+  const controls = await getControls();
 
 
-const ControlPage = async () => {
+  console.log({ controls });
 
-  const controls: Control[] = toControl(data);
-  const groupedData = groupDataByDate(controls);
 
   return (
     <div className="pt-4 px-2 mx-auto mb-10">
       <h1 className="font-semibold text-center" >Resultados</h1>
 
-      <table className="border-collapse w-full print:w-11/12 print:mx-auto print:my-6 print:text-sm">
+      {/* <table className="border-collapse w-full print:w-11/12 print:mx-auto print:my-6 print:text-sm">
         <thead>
           <tr>
             <th className="p-2 bg-fuchsia-100 border text-fuchsia-600 font-bold  print:p-1">
@@ -41,8 +51,8 @@ const ControlPage = async () => {
           </tr>
         </thead>
         <tbody>
-          {groupedData.map((group) => (
-            <Fragment key={group.date.toString()}>
+          {controlsFromDb.map((group) => (
+            <Fragment key={group.createdAt.toString()}>
               <tr>
                 <td
                   className="p-2 bg-fuchsia-100 border text-fuchsia-600 font-semibold text-sm print:text-xl print:p-1 text-center"
@@ -64,11 +74,11 @@ const ControlPage = async () => {
                   </td>
                 </tr>
               ))}
-              </Fragment>
+            </Fragment>
           ))}
           <tr>
             <td>
-              <input type="text" placeholder="Valor" className="focus:outline-none bg-fuchsia-50 text-center w-full p-2 border text-sm font-semibold"  />
+              <input type="text" placeholder="Valor" className="focus:outline-none bg-fuchsia-50 text-center w-full p-2 border text-sm font-semibold" />
             </td>
             <td>
               <select name="moment" id="moment" className="focus:outline-none bg-fuchsia-50 text-left w-full p-2 border text-sm">
@@ -82,10 +92,8 @@ const ControlPage = async () => {
             </td>
           </tr>
         </tbody>
-      </table>
-        <button onClick={()=> console.log("asfd")} className="bg-fuchsia-500 text-white font-semibold p-2 rounded-md w-full">Agregar</button>
+      </table> */}
+      {/* <button onClick={() => console.log("asfd")} className="bg-fuchsia-500 text-white font-semibold p-2 rounded-md w-full">Agregar</button> */}
     </div>
   );
 };
-
-export default ControlPage;

@@ -7,7 +7,7 @@ export function toControl(data: IData[]): Control[] {
             id: item.id,
             date: new Date(item.date).toISOString(),
             value: item.value,
-            details: [],
+            details: "",
             moment: item.moment as "FASTING"
                 | "ONE_HOUR_AFTER_BREAKFAST"
                 | "ONE_HOUR_BEFORE_LUNCH"
