@@ -1,8 +1,7 @@
 import { getServerSession } from "next-auth";
-import Image from "next/image";
 import { authOptions } from "./api/auth/[...nextauth]/route";
-import { User } from "./user";
 import { LoginButton, LogoutButton } from "./auth";
+import { User } from "./user";
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
@@ -12,7 +11,7 @@ export default async function Home() {
       {session ? <LogoutButton /> : <LoginButton />}
 
 
-      <h1> Control diabetes gesticional </h1>
+      <h1 className="font-bold"> Control</h1>
       <h2>Server session</h2>
       <pre> {JSON.stringify(session)} </pre>
 

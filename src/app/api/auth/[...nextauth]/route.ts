@@ -1,7 +1,7 @@
+import { prisma } from '@/lib/prisma'
+import { compare } from 'bcryptjs'
 import NextAuth, { type NextAuthOptions } from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
-import { prisma } from '@/lib/prisma'
-import { compare } from 'bcrypt'
 
 
 export const authOptions: NextAuthOptions = {
@@ -48,12 +48,9 @@ export const authOptions: NextAuthOptions = {
     ],
     callbacks: {
         session: ({ session, token }) => {
-            console.log('Session Callback', { session, token });
             return session;
         },
         jwt: ({ token, user }) => {
-            console.log('JWT Callback', { token, user });
-
             return token;
         },
 

@@ -1,0 +1,254 @@
+[
+    {
+        "id": "69096221-321d-4621-9e17-4dd11dc68941",
+        "date": "2023-05-05T08:00:00",
+        "details": [],
+        "value": "123",
+        "moment": "FASTING"
+    },
+    {
+        "id": "5f49777d-f2d5-4c16-9a19-6d5275d15e9c",
+        "date": "2023-05-05T10:00:00",
+        "details": [],
+        "value": "150",
+        "moment": "ONE_HOUR_AFTER_BREAKFAST"
+    },
+    {
+        "id": "2d51b9f8-1ef9-4371-9d2a-f1b7c207d09f",
+        "date": "2023-05-06T13:00:00",
+        "details": [],
+        "value": "160",
+        "moment": "ONE_HOUR_BEFORE_LUNCH"
+    },
+    {
+        "id": "891d672a-4e50-4326-9b4b-3f6164698edf",
+        "date": "2023-05-06T15:30:00",
+        "details": [],
+        "value": "130",
+        "moment": "ONE_HOUR_AFTER_LUNCH"
+    },
+    {
+        "id": "352c5a48-41bf-48f8-96c2-d818c1d80f8a",
+        "date": "2023-05-06T20:00:00",
+        "details": [],
+        "value": "135",
+        "moment": "ONE_HOUR_BEFORE_DINNER"
+    },
+    {
+        "id": "71a6a064-9090-4cd3-bab5-13e70499f297",
+        "date": "2023-05-06T22:00:00",
+        "details": [],
+        "value": "168",
+        "moment": "ONE_HOUR_AFTER_DINNER"
+    },
+    {
+        "id": "c6b862ce-91a6-4740-a802-37b5d99c918c",
+        "date": "2023-05-07T08:00:00",
+        "details": [],
+        "value": "120",
+        "moment": "FASTING"
+    },
+    {
+        "id": "e338b744-11f8-4e89-b7c3-dbef8d1c25ce",
+        "date": "2023-05-07T10:00:00",
+        "details": [],
+        "value": "142",
+        "moment": "ONE_HOUR_AFTER_BREAKFAST"
+    },
+    {
+        "id": "48c8f8b3-af20-424d-a0a7-c5c57cb73897",
+        "date": "2023-05-07T13:00:00",
+        "details": [],
+        "value": "162",
+        "moment": "ONE_HOUR_BEFORE_LUNCH"
+    },
+    {
+        "id": "3f5a201a-1b47-4622-b3c9-aa46f5f0760c",
+        "date": "2023-05-07T15:30:00",
+        "details": [],
+        "value": "127",
+        "moment": "ONE_HOUR_AFTER_LUNCH"
+    },
+    {
+        "id": "b2401c2c-daf1-4aa8-a986-3845f7e1a670",
+        "date": "2023-05-07T20:00:00",
+        "details": [],
+        "value": "141",
+        "moment": "ONE_HOUR_BEFORE_DINNER"
+    },
+    {
+        "id": "7debb9a1-8c4d-4e6d-8c5f-9bdc7b3229f6",
+        "date": "2023-05-07T22:00:00",
+        "details": [],
+        "value": "170",
+        "moment": "ONE_HOUR_AFTER_DINNER"
+    },
+    {
+        "id": "05f4de7e-674c-4e57-9b15-c425235e2bfc",
+        "date": "2023-05-08T08:00:00",
+        "details": [],
+        "value": "125",
+        "moment": "FASTING"
+    },
+    {
+        "id": "05d27a1b-0d07-484d-a9d5-21f96c9b9df3",
+        "date": "2023-05-08T10:00:00",
+        "details": [],
+        "value": "152",
+        "moment": "ONE_HOUR_AFTER_BREAKFAST"
+    },
+    {
+        "id": "a76e0f28-aa8c-4a79-8c95-9962e3b3d9c6",
+        "date": "2023-05-08T13:00:00",
+        "details": [],
+        "value": "168",
+        "moment": "ONE_HOUR_BEFORE_LUNCH"
+    },
+    {
+        "id": "c88f2c09-25f5-4f67-bbc5-276f7d548fb3",
+        "date": "2023-05-08T15:30:00",
+        "details": [],
+        "value": "133",
+        "moment": "ONE_HOUR_AFTER_LUNCH"
+    },
+    {
+        "id": "62d8ebfc-ee4b-472f-87ce-7a5f1c633ea8",
+        "date": "2023-05-08T20:00:00",
+        "details": [],
+        "value": "137",
+        "moment": "ONE_HOUR_BEFORE_DINNER"
+    },
+    {
+        "id": "bb6e623f-9447-4a1c-9f0f-05974b9a00da",
+        "date": "2023-05-08T22:00:00",
+        "details": [],
+        "value": "165",
+        "moment": "ONE_HOUR_AFTER_DINNER"
+    },
+    {
+        "id": "1ecbe4a9-166d-4e4d-b19e-53aa34ef246a",
+        "date": "2023-05-09T08:00:00",
+        "details": [],
+        "value": "127",
+        "moment": "FASTING"
+    },
+    {
+        "id": "b4a13d7c-7464-43a2-a83f-3e4e76c4f647",
+        "date": "2023-05-09T10:00:00",
+        "details": [],
+        "value": "148",
+        "moment": "ONE_HOUR_AFTER_BREAKFAST"
+    },
+    {
+        "id": "d0f8e5b9-f2dc-4d51-94fb-767c67f2d8e4",
+        "date": "2023-05-09T13:00:00",
+        "details": [],
+        "value": "172",
+        "moment": "ONE_HOUR_BEFORE_LUNCH"
+    },
+    {
+        "id": "20da1df8-8368-447d-b6b7-14c1a338ac96",
+        "date": "2023-05-09T15:30:00",
+        "details": [],
+        "value": "134",
+        "moment": "ONE_HOUR_AFTER_LUNCH"
+    },
+    {
+        "id": "9f8f69d4-aa8e-46a5-95a5-9b2cc6164f9a",
+        "date": "2023-05-09T20:00:00",
+        "details": [],
+        "value": "140",
+        "moment": "ONE_HOUR_BEFORE_DINNER"
+    },
+    {
+        "id": "7cfa1d5a-75db-4cd1-bb10-573d3ee6b49a",
+        "date": "2023-05-09T22:00:00",
+        "details": [],
+        "value": "170",
+        "moment": "ONE_HOUR_AFTER_DINNER"
+    },
+    {
+        "id": "d3a4bb15-84f7-4d99-b3f9-690482df8dd4",
+        "date": "2023-05-10T08:00:00",
+        "details": [],
+        "value": "80",
+        "moment": "FASTING"
+    },
+    {
+        "id": "7c54355f-d1d6-4189-910f-e8e69165d2af",
+        "date": "2023-05-10T10:00:00",
+        "details": [],
+        "value": "155",
+        "moment": "ONE_HOUR_AFTER_BREAKFAST"
+    },
+    {
+        "id": "1c5e0870-cb4b-4a4e-b144-57a34a5d3f7d",
+        "date": "2023-05-10T13:00:00",
+        "details": [],
+        "value": "166",
+        "moment": "ONE_HOUR_BEFORE_LUNCH"
+    },
+    {
+        "id": "05dd53da-19f7-4782-8b4f-829d79c208ef",
+        "date": "2023-05-10T15:30:00",
+        "details": [],
+        "value": "138",
+        "moment": "ONE_HOUR_AFTER_LUNCH"
+    },
+    {
+        "id": "27fa2393-9883-4919-bb4d-8ddca15cc2a3",
+        "date": "2023-05-10T20:00:00",
+        "details": [],
+        "value": "136",
+        "moment": "ONE_HOUR_BEFORE_DINNER"
+    },
+    {
+        "id": "f38906e7-5f15-401d-84b7-50a89f91c04c",
+        "date": "2023-05-10T22:00:00",
+        "details": [],
+        "value": "165",
+        "moment": "ONE_HOUR_AFTER_DINNER"
+    },
+    {
+        "id": "e24c80b1-374f-4084-96ea-77af23490f98",
+        "date": "2023-05-11T08:00:00",
+        "details": [],
+        "value": "90",
+        "moment": "FASTING"
+    },
+    {
+        "id": "7cc840f5-17c1-45b3-a480-67bce4165e64",
+        "date": "2023-05-11T10:00:00",
+        "details": [],
+        "value": "160",
+        "moment": "ONE_HOUR_AFTER_BREAKFAST"
+    },
+    {
+        "id": "28ef14e3-4c28-4e4c-b7dd-b29a5e6d03f6",
+        "date": "2023-05-11T13:00:00",
+        "details": [],
+        "value": "164",
+        "moment": "ONE_HOUR_BEFORE_LUNCH"
+    },
+    {
+        "id": "a75c64ec-4da5-4b18-a6db-880efb40c5c9",
+        "date": "2023-05-11T15:30:00",
+        "details": [],
+        "value": "132",
+        "moment": "ONE_HOUR_AFTER_LUNCH"
+    },
+    {
+        "id": "0e87f013-84aa-44a3-88db-ef9d289f84a1",
+        "date": "2023-05-11T20:00:00",
+        "details": [],
+        "value": "139",
+        "moment": "ONE_HOUR_BEFORE_DINNER"
+    },
+    {
+        "id": "e18d86c6-0ba5-4b7e-9255-7c4a1819ef34",
+        "date": "2023-05-11T22:00:00",
+        "details": [],
+        "value": "163",
+        "moment": "ONE_HOUR_AFTER_DINNER"
+    }
+]
