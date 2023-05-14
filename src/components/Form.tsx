@@ -10,7 +10,7 @@ export const Form = () => {
   const session = useSession();
 
   const onSubmit = async (dataForm: any) => {
-    console.log({ dataForm });
+
     await fetch("/api/control/create", {
       method: "POST",
       body: JSON.stringify({

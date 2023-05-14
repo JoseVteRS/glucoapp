@@ -10,6 +10,9 @@ export const isGlucoseIdeal = (glucoseData: GlucoseData): boolean => {
         case "ONE_HOUR_AFTER_LUNCH":
         case "ONE_HOUR_AFTER_DINNER":
             return isNumberBetween({ num: Number(glucoseData.value), lower: 109, upper: 130 });
+        case "ONE_HOUR_BEFORE_LUNCH":
+        case "ONE_HOUR_BEFORE_DINNER":
+            return isNumberBetween({ num: Number(glucoseData.value), lower: 80, upper: 130 });
         default:
             return false;
     }

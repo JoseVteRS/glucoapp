@@ -40,7 +40,7 @@ export default async function ControlPage() {
   // const controlsMapped = toControl(controls);
   const grouopedByDate = groupDataByDate(controls);
 
-  console.log({ grouopedByDate });
+
 
   return (
     <div className="pt-4 px-2 mx-auto mb-10">
