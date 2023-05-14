@@ -1,11 +1,12 @@
-import { Control, IData } from "@/interfaces/control.interface";
+import { Control, ControlData, IData } from "@/interfaces/control.interface";
 
+//TODO: Revisar IData[]
+export function toControl(data: ControlData[]) {
+    return data.map((item: ControlData) => {
 
-export function toControl(data: IData[]): Control[] {
-    return data.map((item) => {
         return {
             id: item.id,
-            date: new Date(item.date).toISOString(),
+            date: item.date,
             value: item.value,
             details: "",
             moment: item.moment as "FASTING"
@@ -14,6 +15,7 @@ export function toControl(data: IData[]): Control[] {
                 | "ONE_HOUR_AFTER_LUNCH"
                 | "ONE_HOUR_BEFORE_DINNER"
                 | "ONE_HOUR_AFTER_DINNER",
+            
         };
     });
 }

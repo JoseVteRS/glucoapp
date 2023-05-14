@@ -11,6 +11,23 @@ export interface Control {
     | "ONE_HOUR_AFTER_DINNER";
 }
 
+export interface ControlData {
+    id:        string;
+    createdAt: Date;
+    updatedAt: Date;
+    details:   string;
+    date?:     Date;
+    value:     number;
+    userId:    string;
+    moment?:  "FASTING"
+    | "ONE_HOUR_AFTER_BREAKFAST"
+    | "ONE_HOUR_BEFORE_LUNCH"
+    | "ONE_HOUR_AFTER_LUNCH"
+    | "ONE_HOUR_BEFORE_DINNER"
+    | "ONE_HOUR_AFTER_DINNER",
+}
+
+
 export interface IData {
     id: string;
     date: string;
