@@ -12,7 +12,7 @@ export async function POST(req: Request) {
         throw new Error("Unauthorized");
     }
 
-    const { value, moment } = await req.json();
+    const { value, moment, details } = await req.json();
 
     // Validar los datos de entrada
 
@@ -22,7 +22,7 @@ export async function POST(req: Request) {
         data: {
             value: Number(value),
             moment: moment,
-            details: "",
+            details: details,
             date: new Date(), // Utilizar una marca de tiempo en lugar de una cadena de texto
             user: {
                 connect: {

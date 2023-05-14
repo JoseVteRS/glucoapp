@@ -48,8 +48,14 @@ export const authOptions: NextAuthOptions = {
     ],
     callbacks: {
         session: async ({ session, user, token }) => {
-            session.user.id = token.sub;
-            return Promise.resolve(session);
+            return {
+                ...session,
+                user: {
+                    ...session.user,
+                    id: token.sub
+                }
+            }
+            // return Promise.resolve(session);
         },
         jwt: ({ token }) => {
             return token;
