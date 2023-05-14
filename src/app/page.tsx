@@ -9,14 +9,19 @@ export default async function Home() {
 
   return (
     <main className="">
-      {session ? <LogoutButton /> : <LoginButton />}
+      <nav className="flex items-center justify-between p-2 bg-fuchsia-300">
+        <h1 className="font-bold text-fuchsia-900"> {session?.user?.name}</h1>
+        {session ? <LogoutButton /> : <LoginButton />}
+      </nav>
 
-      <h1 className="font-bold"> Control</h1>
-      <h2>Server session</h2>
-      <pre> {JSON.stringify(session)} </pre>
-
-      <Link href={`/control`}>Ir a control</Link>
-      <User />
+      <div className="flex items-center justify-center mt-10">
+        <Link
+          className="bg-fuchsia-800 hover:bg-fuchsia-900 text-white font-semibold px-2 py-3 rounded shadow-xl shadow-fuchsia-300/40"
+          href={`/control`}
+        >
+          Ir a control
+        </Link>
+      </div>
     </main>
   );
 }
