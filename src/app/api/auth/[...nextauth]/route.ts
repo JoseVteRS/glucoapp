@@ -8,9 +8,11 @@ export const authOptions: NextAuthOptions = {
     session: {
         strategy: 'jwt',
     },
+ 
     providers: [
         CredentialsProvider({
             name: 'Sign in',
+
             credentials: {
                 email: {
                     label: "Email",
@@ -60,6 +62,10 @@ export const authOptions: NextAuthOptions = {
         jwt: ({ token }) => {
             return token;
         },
+        redirect: async ({ url, baseUrl }) => {
+            return baseUrl
+        }
+
 
     },
 }
